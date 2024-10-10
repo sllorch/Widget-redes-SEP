@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test | Secretaría de Educación Pública</title>
+    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+    <style>
+        .nada {
+            height: 90vh;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page">
+        <!--Menú-->
+        <nav class="navbar navbar-inverse navbar-fixed-top sub-navbar" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navbarMainCollapse"><span class="sr-only">Interruptor de Navegación</span><span
+                            class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="subenlaces">
+                    <ul class="nav subnav  navbar-nav navbar-right">
+                        <li><a href="#">Elemento 1</a></li>
+                        <li><a href="#">Elemento 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--//Menú-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="nada">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----WIDGET REDES--------->
+        <style>
+            .color-facebook {
+                background-color: #3b5998
+            }
+            .color-instagram {
+                background-color: #f62782;
+                background: radial-gradient(circle at 0% 107%, #fdf497 0%, #fdf497 10%, #fd5949 60%, #d6249f 80%, #285AEB 97%)
+            }
+            .color-twitter {
+                background-color: #0f0f0f
+            }
+            .color-youtube {
+                background-color: red
+            }
+            .social-btn img {
+                width: 40px
+            }
+            .social-btn p {
+                color: #fff;
+                margin-top: 0;
+                margin-bottom: 0
+            }
+            .icon-facebook {
+                order: 2;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABxElEQVR4nNWXu0oDQRSGE0XxWgk+gKVgFUijIlELIZXgK1hZaBGtTSFeOzvBUnwJIYqoTXwBESWiklhokUYF88khA07iZHdmLxF/2CY7/yU755ydTST+C4BOYBLYA66ACvCpror6bReYkLVRGvcCa8rEFrJ2FegJa74APBAcJWA+iHESWAdqhIdobAEdtuYdwDHR40j+mE2ADeJD3mbPawGEH4FL1QnXwGuLdbWWNUG92l0LTgzTBq0hn8L83R3UW80FRa828+HmTEOm4hgg47OdXig3dAX1CeeCN1NbqUc/AmQtNMZ1ooxXFxQN5ovAl4PGjk6WYnLBqSHAiaPGhU5+cSQXDAEKjhplnfzxBwHedXLVgjDqVfVNYcYs9Ko64dZvta250hu2CHCjE84jDpC2CHCmE7YtCEvArLpSBtOUdv/QQm9TJ0/T/iKc0sndwHMbAzwBXc0CuTYGWDEVTr96ScQdQJ50X6vqnbM8kAQNINpZo7njiylogJ8XkM+JeD+GAAcuJ+OkpPXYDpcANTVn/E/EzVBDpRQigHBnEmEADErbAPcOAe6AZWAglHmi0UDOjTIx86ZiUlsmX1OZSD9O48Y3QGWlCM160NoAAAAASUVORK5CYII=) 50% 50% no-repeat;
+                background-size: 100%
+            }
+            .icon-instagram {
+                order: 2;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACe0lEQVR4nLWXPU9UQRSGb5YEK6Va3e2IhCix0rXXP2E2WhpCpUIDsv4EvzpC1IJK+Q0rJn4FWLRAKRD1F6BIpY0YH3PCTHxzd+4X9+6bTAhzPt535sycnRtFGQBqQBM4XXBYTC0rfxDACDAPvAf+cHRY7DvgtuXMS34V2KN6fAfaWeR3gL+xFawBT4FHBYfFrMd20HJ3ksivCbn9XQBO5dq29EU1gMVY7nao5nvicL0scUDIpOzEN+CEGjtiXKiQ9BxwSf630njMqaOddsNB3m03P6DlRl+MrRD45fJednNNORMb3nHIERtWM0iPATPAVuCUfwSmgWHnOwx8BX4CE5JjXRZb84fE41kK+QTwJcd12wHOioj/tT6cWxbfhk2MysRSCvm++P0GusADN7puzmPfiwjkWhK/0UwBbts/i88ra7UBvzFn8/jky1FWwIzYX4aSiq9t+Rvxv1mFgC3Z9r6VB/zHpRwfSgng8Kp5dLPIJW5F4k6WEXBRbHcLCLgvca0yAlpiu1dAgN0Mj/NVleB5AQEvJK5+ZAEG1+FwB2ssyncIfWfdDNgLC5gW++sc1/Ct+N+oqhHtiI/d8/GElSv5diWNyGBtNdaKD9xVe+jGimy74QdwJgogJKAhE8uhIBFh7TUL20nkST9GQ6J+LSlQanzLOlyAeNNqnnZGXI6eHOqan7SnM+6x0EhLIInqwAU36jlj9EHSU4O92z0WowEBeCI8s2oYce92/yidHAD5lJDvAsfjDu3YN4E9IJsVENu2P5a8xnElybkT+DDplfgw2Qh8mMxnKW5LOarEbuLKo34R9qSecyvQBlMUdtVsB2f7al6ghgP9PP8HNHUX5N6MSkcAAAAASUVORK5CYII=) 50% 50% no-repeat;
+                background-size: 100%
+            }
+            .icon-twitter {
+                order: 2;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNCAyNDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwYXRoIGQ9Ik0xNC4wOTU0NzksMTAuMzE2NDgyTDIyLjI4NjM1NCwxaC0xLjk0MDcxOGwtNy4xMTUzNTIsOC4wODc2ODJMNy41NTE0MTQsMUgxbDguNTg5NDg4LDEyLjIzMTA5M0wxLDIzaDEuOTQwNzE3ICBsNy41MDkzNzItOC41NDI4NjFMMTYuNDQ4NTg3LDIzSDIzTDE0LjA5NTQ3OSwxMC4zMTY0ODJ6IE0xMS40MzY1MjIsMTMuMzM4NDY1bC0wLjg3MTYyNC0xLjIxODcwNGwtNi45MjQzMTEtOS42ODgxNWgyLjk4MTMzOSAgbDUuNTg5NzgsNy44MjE1NWwwLjg2Nzk0OSwxLjIxODcwNGw3LjI2NTA2LDEwLjE2NjI3MWgtMi45ODEzMzlMMTEuNDM2NTIyLDEzLjMzODQ2NXoiLz48L3N2Zz4=) 50% 50% no-repeat;
+                background-size: 100%;
+                filter: invert(1);
+                transform: scale(.85);
+            }
+            .icon-youtube {
+                order: 2;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACD0lEQVR4nO3ZT4hNURzA8Wcyk5qIQViRBRY2TIqiKdlamvInG6Vko8liSmnSlGQlbJSxsMGUDZ6EjCQbZApJ1lLIQrFAH9066na678XMvc87db91Vvf1+93v651zfu/3azRqampqalIE/ViONRgMazN2FKw/zzdiNRajtxMvOYCtOIjTuIz7eIVP+KkcvuE9nuEGLuA4dmE9+mby8vNwFNO6h++YxLa/lVgbvu1u5RdOYU47iUV4Kw1G24lkpqnwAytbibyRFkeKJOYGy5S4VCSySno8KRIZkh5fikT2lxD4KT7rLCtikWMlBB0PJcfZDu63oSqO3vHoYr2peoZjkXNliuTiZoXiS9VxOE44UYVIiN0bis6PymcsTna1KpGokj5T8v45HyfJSudKRXK51qGpHK7FwbP/GB0RifbP61nmfBAHnfoPIjvxbpY5H8VB7yb607odB28mutkn4yTXKz5+R7LaSPlMxMkuJnohnowTZh2SFEuUkVhkNNGicU8skvWPUizjt8QiWecvRZbFIvOlx9fC/hY+SIvpouM+E7knLa60EjkkLYYbbW7gh9KgiZ5CkSCzNCuNdTd3sLClRE6mBwfwWHd14aewt20nvo3UAmzCPpwINdktvAinXDa3KHPQ8zw36BnD7nDH9f/zy89Atg9LwihtMLfisdv23LMN4fMDHRm91dTU1NQ0KuI3PorRs6xvl7QAAAAASUVORK5CYII=) 50% 50% no-repeat;
+                background-size: 100%
+            }
+            .icon-share {
+                order: 2;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABLklEQVR4nO3VTysEYRzA8XkNnJQU7pKypUXIRd6REq7KSdI6kz9RDrscUZaX4M4L4A3Yj6bdLW07++yyzyjt9zQ103y/8/yemUmSAf8VrOIUz7jAep7yLe3Zy0M+rzNxVwJHgYDz2AHlQEA1pnwWL4GA41jisjA1LMUU13CJHXy2kW/0cvMJLGKsB/HUt2umsY8KDjHXrXgSjy31txjpRvwrMIy3jPm9RxM3acwutIn6L26C+0DAdRIT3P11wHYXI7iKOYIhvGbIP3IJUX//H1pklcZrWGgc5xIyjgWMtjkXDMEMDnCDEooxIgsZIVmf4s2+R2SEdGIliYV6SOh3fBItIKWLlajGDigFAs5iBxQbGy6LtagBKeluz5DvJnmB5XTD4Sld9lyefEDyA74AGXMEK//4IKoAAAAASUVORK5CYII=) 50% 50% no-repeat;
+                background-size: 100%;
+                margin: 9px 7.5px
+            }
+
+            .icon-cerrado {
+                order: 2;
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAz0lEQVR4nM2XQRKCMAxFi+NK9BZyYwcWnkVZcLDnMLajdFDStBD+Ovlv0pQ0OLcXAUegKejXjJ5LQTXQ81YLVBnAynvgPetfgSfgyVR34KCE3iKvAbjMHW+oNFaXUrmHjjlz6ifH7vvwTyL4AjToGieFfqjgQmgr7QuSnufkqg2yoRqjYtDEfnXCmLRZgKyaMpUWhOuhGfB8qAJeDmoGxuKosbhcWHxOWAwQLEYmFo8EVs8iFosAVqsPVsve13r7WHm9Pe9noXefhO1/YbbUCy46wzuSr0qSAAAAAElFTkSuQmCC) 50% 50% no-repeat;
+                background-size: 100%;
+                margin: 9px
+            }
+            .social-share-btn {
+                bottom: 5%;
+                right: 1%;
+                position: fixed;
+                z-index: 10;
+            }
+
+            .share-container {
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                box-shadow: 4px 2px 10px 1px rgba(0, 0, 0, 0.2);
+                background: #a57f2c
+            }
+            .share-container .icon-share {
+                margin-right: 2px
+            }
+            .share-container:active:not(:focus-within) {
+                box-shadow: -2px 2px 8px rgba(0, 0, 0, 0.2) inset
+            }
+            .social-share {
+                position: absolute;
+                bottom: 60px;
+                display: none;
+                right: 2px
+            }
+            .toggle input[type="checkbox"]:checked+.share-container .social-share {
+                animation: fadeIn 1s;
+                display: block
+            }
+            .toggle input[type="checkbox"]:not(:checked)+.share-container .social-share {
+                animation: fadeOut 1s
+            }
+            .toggle input[type="checkbox"]:checked+.share-container .icon-share, .toggle input[type="checkbox"]:not(:checked)+.share-container .icon-cerrado {
+                display: none
+            }
+            .social-share a {
+                margin: 12px auto;
+                display: block;
+            }
+            .social-btn p {
+                display: none;
+            }
+            .social-btn {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%
+            }
+            .social-btn div {
+                margin: 8px
+            }
+            input[type="checkbox"]#toggle {
+                display: none
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0
+                }
+                to {
+                    opacity: 1
+                }
+            }
+            @keyframes fadeOut {
+                from {
+                    opacity: 1
+                }
+                to {
+                    opacity: 0
+                }
+            }
+            @media only screen and (min-width: 600px) {
+                .social-share-btn {
+                    position: fixed;
+                    top: 55%;
+                    bottom: auto;
+                    left: 0;
+                    z-index: 10;
+                    width: 50px;
+                }
+                .toggle input[type="checkbox"]:checked+.share-container .social-share, .toggle input[type="checkbox"]:not(:checked)+.share-container .social-share {
+                    animation: none;
+                    display: block
+                }
+                .toggle input[type="checkbox"],
+                .icon-share,
+                .icon-cerrado {
+                    display: none;
+                }
+                .share-container {
+                    display: block;
+                    visibility: hidden;
+                }
+                .social-share {
+                    visibility: visible;
+                    left: 0;
+                    bottom: 0;
+                }
+                .social-share a {
+                    text-decoration: none;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin: 4px 0;
+                }
+                .social-share a:hover {
+                    text-decoration: none !important
+                }
+                .social-btn p {
+                    display: flex;
+                    text-align: right;
+                }
+                .social-btn {
+                    display: flex;
+                    width: 184px;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 0 30px 30px 0;
+                    position: relative;
+                    left: -133px;
+                    transition: left 1s;
+                    padding: 4px 4px 4px 20px;
+                }
+                .social-btn:hover {
+                    left: -10px;
+                    transition: left 1s
+                }
+            }
+        </style>
+
+        <div class="social-share-btn">
+            <label class="toggle" for="toggle">
+                <input type="checkbox" id="toggle" />
+                <div class="share-container">
+                    <div class="icon-share"></div>
+                    <div class="icon-cerrado"></div>
+                    <div class="social-share">
+                        <a href="//facebook.com/sepmx">
+                            <div class="social-btn color-facebook">
+                                <div class="icon-facebook"></div>
+                                <p class="order-1">Facebook</p>
+                            </div>
+                        </a>
+                        <a href="//instagram.com/sepmx">
+                            <div class="social-btn color-instagram">
+                                <div class="icon-instagram"></div>
+                                <p class="order-1">instagram</p>
+                            </div>
+                        </a>
+                        <a href="//x.com/SEP_mx">
+                            <div class="social-btn color-twitter">
+                                <div class="icon-twitter"></div>
+                                <p class="order-1">X (twitter)</p>
+                            </div>
+                        </a>
+                        <a href="//youtube.com/canalsep">
+                            <div class="social-btn color-youtube">
+                                <div class="icon-youtube"></div>
+                                <p class="order-1">YouTube</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <!----WIDGET REDES--------->
+    </main>
+    <!-- JS -->
+    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+
+</body>
+
+</html>
