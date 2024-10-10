@@ -18,7 +18,7 @@ Para utilizarlo en tu sitio simplemente copia el todo el código del archivo [co
 
 ```
     ......
-    <a href="//facebook.comsepmx">
+    <a href="//facebook.com/sepmx">
         <div class="social-btn color-facebook">
                 <div class="icon-facebook"></div>
             .....
